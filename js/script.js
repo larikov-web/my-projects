@@ -1,21 +1,22 @@
 "use strict";
+let num = 50;
 
-let numberOfFilms = prompt('Сколько фильмов вы посмотрели', '');
+if (num == 5) {
+    console.log('yes');
+} else {
+    console.log('no');
+}
 
-let personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: {},
-    private: false
-};
+(num == 5) ? console.log('yes') : console.log('no');
 
-let questionOne = prompt('Один из просмотренных фильмов?', ''),
-    questionTwo = prompt('Его оценка?', ''),
-    questionThree = prompt('Один из просмотренных фильмов?', ''),
-    questionFour = prompt('Его оценка?', '');
-
-personalMovieDB.movies[questionOne] = questionTwo;
-personalMovieDB.movies[questionThree] = questionFour;
-
-console.log(personalMovieDB123123);
+switch (num) {
+    case 49:
+        console.log('no');
+    break;
+    case 50:
+        console.log('yes');
+    break;
+    default:
+        console.log('no');
+    break;
+}
